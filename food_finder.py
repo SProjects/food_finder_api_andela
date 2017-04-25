@@ -16,16 +16,14 @@ from app.restuarant import Restaurant
 
 
 def main(args):
-    if args['find'] and args['<food_name>']:
-        api = Api()
-        food = args['<food_name>']
-        query_params = {'query': food}
+    """Usage: find <food_name>"""
+    api = Api()
+    food = args['<food_name>']
+    query_params = {'query': food}
 
-        data = api.get_data(query_params)
-        restaurants = create_restaurants(data)
-        display_top_four(restaurants, food)
-    else:
-        print 'Notice: Please run food_finder.py --help to learn the usage pattern.'
+    data = api.get_data(query_params)
+    restaurants = create_restaurants(data)
+    display_top_four(restaurants, food)
 
 
 def create_restaurants(data):
