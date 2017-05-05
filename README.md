@@ -4,6 +4,7 @@ Food Finder
 **Usage:**
 
 > - Clone the repo to your local box and cd into the directory
+> - Setup an account on [Foursquare](https://developer.foursquare.com/) to get a CLIENT_ID and CLIENT_SECRET.
 > - In your terminal setup the CLIENT_ID, `export CLIENT_ID=<from_foursquare>` and CLIENT_SECRET `export CLIENT_SECRET=<form_foursquare>`
 > - Preferably from a virtual environment, run `pip install -r requirements.txt`.
 > - Finally, to use the app run; `python food_finder.py find <food_name>` where food name can be something like 'fish'
